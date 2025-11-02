@@ -220,8 +220,8 @@ Then:
 
 ##  Author
 
-##David  
-MSc Artificial Intelligence | Backend & AI Engineer  
+David  
+MSc Artificial Intelligence | AI Engineer  
 [LinkedIn](https://www.linkedin.com/in/david-benjamin-74a1a6280)  
 
 ---
