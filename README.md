@@ -216,7 +216,7 @@ Then:
 * Input Video: `https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/spanish.mp4`
 * Output Video: `https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/final_output.mp4`
 <video width="640" height="360" controls>
-  <source src="video-accessiblity_project_demo.mp4" type="video/mp4">
+  <source src="https://drive.google.com/file/d/1-pADari6wTKjQixkJ80k6poHtTY6mYHr/view?usp=sharing" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 ---
