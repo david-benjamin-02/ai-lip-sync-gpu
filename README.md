@@ -215,7 +215,10 @@ Then:
 * Demo Video: `https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/video-accessiblity_project_demo.mp4`
 * Input Video: `https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/spanish.mp4`
 * Output Video: `https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/final_output.mp4`
-
+<video width="640" height="360" controls>
+  <source src="video-accessiblity_project_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 ---
 
 © 2025 David Benjamin B — All Rights Reserved
