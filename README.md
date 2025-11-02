@@ -1,35 +1,24 @@
-Excellent 👏 — that’s exactly the right goal!
-You want your **README** to look *structured, clean, and professional on GitHub* — with correct headings, spacing, and code blocks (the same as what you see in VS Code).
-
-Let’s do that properly.
-
----
-
-## 🧾 Here’s the **Clean, GitHub-Optimized README.md** for your project
-
-✅ Copy this and replace your existing README file.
-✅ It will display *perfectly formatted* on GitHub — all spacing, tree structure, and commands preserved.
 
 ---
 
 ````md
-# 🎥 AI Lip-Sync GPU
+# AI Lip-Sync GPU
 
-A multilingual AI-powered lip-syncing application that **translates, generates speech, and synchronizes lips** in real-time using Deep Learning (Wav2Lip + Whisper + Transformers) and Google Cloud APIs.
+A multilingual AI-powered lip-syncing application that translates, generates speech, and synchronizes lips in real time using Deep Learning (Wav2Lip, Whisper, Transformers) and Google Cloud APIs.
 
 ---
 
-## 🚀 Features
-- Automatic speech recognition with **OpenAI Whisper**
+## Features
+- Automatic speech recognition with OpenAI Whisper
 - Real-time translation to target languages
-- Lip-syncing using **Wav2Lip GAN**
-- Text-to-Speech conversion for translated output
-- Google Cloud API integration for translation & speech synthesis
+- Lip-syncing using Wav2Lip GAN
+- Text-to-speech conversion for translated output
+- Google Cloud API integration for translation and speech synthesis
 - GPU-accelerated pipeline for faster video generation
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.2-orange)
 ![Whisper](https://img.shields.io/badge/OpenAI-Whisper-lightgrey)
@@ -39,7 +28,7 @@ A multilingual AI-powered lip-syncing application that **translates, generates s
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```bash
 ai-lipsync-gpu/
 │
@@ -59,25 +48,25 @@ ai-lipsync-gpu/
 
 ---
 
-## ⚙️ Full Installation & Setup Guide
+## Full Installation & Setup Guide
 
-### 1️⃣ Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/david-benjamin-02/ai-lipsync-gpu.git
 cd ai-lipsync-gpu
 ```
 
-### 2️⃣ Create and Activate Main Virtual Environment
+### 2. Create and Activate Main Virtual Environment
 
 ```bash
 python -m venv myenv
 myenv\Scripts\activate   # On Windows
 ```
 
-### 3️⃣ Install Main Requirements
+### 3. Install Main Requirements
 
-Create `requirements.txt` with:
+Create a file named `requirements.txt` with the following:
 
 ```txt
 gradio==5.1.0
@@ -96,13 +85,13 @@ gTTS==2.3.2
 sentencepiece==0.1.99
 ```
 
-Then install:
+Then install the dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Verify CUDA & GPU Setup
+### 4. Verify CUDA & GPU Setup
 
 ```bash
 python
@@ -111,20 +100,20 @@ python
 >>> print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU only")
 ```
 
-Expected:
+Expected output:
 
 ```bash
 True
 NVIDIA GeForce RTX 4060 Laptop GPU
 ```
 
-If it says *False*, reinstall CUDA-compatible PyTorch:
+If CUDA is not available, reinstall CUDA-compatible PyTorch:
 
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
-### 5️⃣ Setup the Wav2Lip Environment
+### 5. Setup the Wav2Lip Environment
 
 ```bash
 cd Wav2Lip
@@ -152,20 +141,20 @@ Then install:
 pip install -r requirements.txt
 ```
 
-### 6️⃣ Download Pretrained Model
+### 6. Download Pretrained Model
 
 ```bash
 mkdir checkpoints
 ```
 
-Download [**wav2lip_gan.pth** (Google Drive)](https://drive.google.com/file/d/1BXd6BC5_Jg_pAke9U74FY-jBmMUIHZpY/view?usp=drive_link)
+Download [wav2lip_gan.pth (Google Drive)](https://drive.google.com/file/d/1BXd6BC5_Jg_pAke9U74FY-jBmMUIHZpY/view?usp=drive_link)
 and place it in:
 
 ```
 Wav2Lip/checkpoints/wav2lip_gan.pth
 ```
 
-### 7️⃣ Run Wav2Lip Test (Optional)
+### 7. Run Wav2Lip Test (Optional)
 
 ```bash
 cd Wav2Lip
@@ -177,7 +166,7 @@ python inference.py \
   --outfile "result.mp4"
 ```
 
-### 8️⃣ Run the Full Project
+### 8. Run the Full Project
 
 ```bash
 cd ..
@@ -192,56 +181,45 @@ Using device: CUDA (NVIDIA GeForce RTX 4060 Laptop GPU)
 * Running on local URL: http://127.0.0.1:7860
 ```
 
-### 9️⃣ Open the Web App
+### 9. Open the Web App
 
-Visit:
-👉 [http://127.0.0.1:7860](http://127.0.0.1:7860)
+Open in your browser:
+
+```
+http://127.0.0.1:7860
+```
 
 Then:
 
 1. Upload a video
-2. Select target language
+2. Select the target language
 3. Wait for processing (ASR → Translation → TTS → Lip-Sync)
-4. Download final video
+4. Download the final video
 
 ---
 
-## 🧪 Troubleshooting
+## Troubleshooting
 
-| Issue                                           | Solution                                                     |
-| ----------------------------------------------- | ------------------------------------------------------------ |
-| `ModuleNotFoundError: cv2`                      | Activate correct environment and install `opencv-python`     |
-| `TypeError: mel() takes 0 positional arguments` | Use `librosa==0.9.2`                                         |
-| Processing too long                             | Ensure GPU is available (`torch.cuda.is_available() → True`) |
-| Audio & video out of sync                       | Match input and generated audio lengths before Wav2Lip step  |
-| `np.complex` error                              | Downgrade NumPy to `1.23.5`                                  |
+| Issue                                           | Solution                                                        |
+| ----------------------------------------------- | --------------------------------------------------------------- |
+| `ModuleNotFoundError: cv2`                      | Activate the correct environment and install `opencv-python`    |
+| `TypeError: mel() takes 0 positional arguments` | Use `librosa==0.9.2`                                            |
+| Processing too long                             | Ensure GPU is available (`torch.cuda.is_available()` → True)    |
+| Audio & video out of sync                       | Match input and generated audio lengths before the Wav2Lip step |
+| `np.complex` error                              | Downgrade NumPy to `1.23.5`                                     |
 
 ---
 
-## 🎬 Demo Files
+## Demo Files
 
-* **Demo Video:** `video-accessiblity_project_demo.mp4`
-* **Input Video:** `spanish.mp4`
-* **Output Video:** `final_output.mp4`
+* Demo Video: https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/video-accessiblity_project_demo.mp4
+* Input Video: https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/spanish.mp4
+* Output Video: https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/final_output.mp4
 
 ---
 
 © 2025 David Benjamin B — All Rights Reserved
 
-````
+```
 
 ---
-
-### ✅ **Why This Version Works**
-| Problem Before | Fixed In This Version |
-|----------------|------------------------|
-| GitHub ignored line breaks | Every section separated by blank lines |
-| Spaces collapsed | All structured parts wrapped in ``` code blocks |
-| Tree view misaligned | Now fenced in code block with `bash` syntax |
-| Tables broken | Rebuilt Markdown table syntax |
-| Overlong headings | Simplified and properly spaced |
-
----
-
-Would you like me to also generate a **short GitHub project description** (the one that appears under the repo name on your profile) — something catchy and professional for this project?
-````
