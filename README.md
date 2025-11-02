@@ -212,14 +212,11 @@ Then:
 
 ## Demo Files
 
-* Demo Video: <video controls src="https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/video-accessiblity_project_demo.mp4" title="Title"></video>
-* Input Video: `<video controls src="https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/spanish.mp4" title="Title"></video>`
-* Output Video: `<video controls src="https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/final_output.mp4" title="Title"></video>`
+* Demo Video: `https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/video-accessiblity_project_demo.mp4`
+* Input Video: `https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/spanish.mp4`
+* Output Video: `https://github.com/david-benjamin-02/ai-lip-sync-gpu/blob/main/final_output.mp4`
 
 ---
 
 © 2025 David Benjamin B — All Rights Reserved
 
-```
-
----
