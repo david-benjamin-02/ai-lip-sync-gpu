@@ -218,5 +218,13 @@ Then:
 
 ---
 
+##  Author
+
+##David  
+MSc Artificial Intelligence | Backend & AI Engineer  
+[LinkedIn](https://www.linkedin.com/in/david-benjamin-74a1a6280)  
+
+---
+
 © 2025 David Benjamin B — All Rights Reserved
 
